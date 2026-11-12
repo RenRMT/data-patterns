@@ -1,0 +1,57 @@
+---
+layout: default
+title: Data smells
+---
+<header class="page-head">
+  <p class="eyebrow"><span class="mark" aria-hidden="true"></span>Catalogue</p>
+  <h1 style="margin-top:8px">Data smells</h1>
+  <p class="lead">
+    A data smell is the counterpart of a code smell: a sign that something
+    may be wrong, not proof that it is. A smell you accept on purpose is
+    fine, as long as you write down why.
+  </p>
+</header>
+
+<div class="prose" style="margin-top:18px">
+  <p>
+    Fixing at entry is cheaper than fixing in storage, which is cheaper than
+    fixing in the pipeline, which is cheaper than fixing in the report. Each
+    step later multiplies the cost and the number of people who need to know
+    about the fix.
+  </p>
+  <p>
+    And where a code smell points at a design problem, a data smell usually
+    points at an organisational one. Department names as free text mean that
+    nobody owns the department list. In those cases the fix is a
+    conversation about ownership, not a script.
+  </p>
+</div>
+
+<input class="filter" type="search" data-filter placeholder="Filter by name, symptom or search term" aria-label="Filter smells">
+
+{% for cat in site.data.smell_categories %}
+{% assign items = site.smells | where: "category", cat.id | sort: "order" %}
+<section class="section" id="{{ cat.id }}" data-filter-group>
+  <div class="section-head">
+    <h2>{{ cat.title }}</h2>
+    <span class="meta">{{ cat.plain }} · {{ items.size }}</span>
+  </div>
+  <p class="section-desc">{{ cat.description }}</p>
+  <div class="grid">
+    {% for i in items %}{% include card.html item=i %}{% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<section class="section">
+  <div class="section-head"><h2>When it is not a smell</h2></div>
+  <div class="prose" style="margin-top:8px">
+    <ul>
+      <li>Denormalised tables in a reporting layer are a deliberate choice.</li>
+      <li>Wide format in a final product is exactly right.</li>
+      <li>Redundancy for speed is fine, when it is derived and can be refreshed.</li>
+      <li>Received data may be messy. It should be kept unchanged; the cleaning belongs in the next layer.</li>
+    </ul>
+    <p>Short on time? The <a href="{{ '/guides/ten-minute-scan/' | relative_url }}">ten-minute scan</a> finds most smells in a new dataset.</p>
+  </div>
+</section>

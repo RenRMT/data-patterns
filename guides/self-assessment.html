@@ -1,0 +1,45 @@
+---
+title: Self-assessment
+lead: Sixteen questions, one per pattern. Answer for one dataset or one report at a time, not for the whole team.
+guide: true
+order: 2
+---
+{% assign patterns = site.patterns | sort: "order" %}
+<p>
+  Tick what is in place. The first open question in your
+  <a href="{{ '/guides/how-much-is-enough/' | relative_url }}">stakes tier</a>
+  is your next step. Ticks are saved in this browser only.
+</p>
+
+<p class="assess-result" data-assess-result aria-live="polite">Tick the questions that are in place.</p>
+
+<div data-assess>
+{% assign tiers = "One-off work|Recurring, internal work|Reported externally" | split: "|" %}
+{% for tier_name in tiers %}
+{% assign n = forloop.index %}
+<h2>{{ tier_name }}</h2>
+<ul class="assess">
+  {% for p in patterns %}{% if p.tier == n %}
+  <li data-title="{{ p.title | escape }}">
+    <input type="checkbox" id="q{{ p.order }}" value="{{ p.order }}">
+    <label for="q{{ p.order }}">
+      {{ p.question }}
+      <span class="meta">Pattern {{ p.order }} · <a href="{{ p.url | relative_url }}">{{ p.title }}</a></span>
+    </label>
+  </li>
+  {% endif %}{% endfor %}
+</ul>
+{% endfor %}
+</div>
+
+<button class="button" type="button" data-assess-reset>Clear all ticks</button>
+
+<h2>Reading the result</h2>
+<p>
+  One-off work needs the first group. Recurring work needs the first two.
+  Anything reported outside the team needs all three. A file that
+  identifies people needs
+  <a href="{{ '/patterns/safety-net/' | relative_url }}">Safety net</a> and
+  <a href="{{ '/patterns/travel-light/' | relative_url }}">Travel light</a>
+  whatever its tier.
+</p>

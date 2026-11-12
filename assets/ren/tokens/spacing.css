@@ -1,0 +1,17 @@
+/* Spacing is rhythmic, not uniform: related things sit tight, groups breathe, sections get real air. */
+:root{
+--space-2:2px;--space-4:4px;--space-6:6px;--space-8:8px;--space-12:12px;--space-16:16px;--space-20:20px;--space-24:24px;--space-32:32px;--space-40:40px;--space-56:56px;--space-72:72px;--space-96:96px;
+--gap-tight:6px;--gap-related:12px;--gap-group:24px;--gap-section:56px;--gap-chapter:96px;
+--sidebar-width:272px;--main-max:1100px;--main-pad:64px 72px 96px;
+/* Dashboard canvas: 1920 × 1080, 16 columns of 102px, 24px margin, 16px gutter. Column n starts at 24 + (n − 1) × 118; k columns are 118k − 16 wide. */
+--dash-w:1920px;--dash-h:1080px;--dash-margin:24px;--dash-gutter:16px;--dash-col:102px; /* @kind spacing */
+--dash-header:96px;--dash-footer:24px;--dash-rail:456px;--dash-kpi:152px;--dash-tile-pad:16px; /* @kind spacing */
+/* Radii: 3px is the maximum anywhere. --radius-pill is kept as a name for chips/tags but is no longer a pill. */
+--radius-mark:0;--radius-code:3px;--radius:3px;--radius-pill:3px;--radius-button:0px;
+/* No decorative shadows. Hairlines only. */
+--hairline:inset 0 0 0 1px rgba(0,0,0,.06); /* @kind shadow */
+--focus-ring:2px solid var(--accent);
+--ease:cubic-bezier(.2,0,0,1); /* @kind other */
+--dur-fast:.15s; /* @kind other */
+--dur:.2s; /* @kind other */
+}

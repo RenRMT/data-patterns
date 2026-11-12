@@ -1,0 +1,72 @@
+# One icon per smell and pattern. Each value is the inside of a 48x48 SVG.
+# Classes: (none) = outline, f = tinted fill, d = solid dot, t = text, dash = dashed line.
+
+# ---------- Smells: Shape Shifters ----------
+report-in-disguise: '<rect x="6" y="8" width="36" height="32" rx="2"/><rect class="f" x="6" y="8" width="36" height="8" rx="2"/><rect class="f" x="20" y="24" width="22" height="16"/><path d="M6 24h14M6 32h14M20 16v24M31 16v8"/>'
+calendar-columns: '<rect x="7" y="10" width="34" height="30" rx="2"/><rect class="f" x="18" y="18" width="12" height="22"/><path d="M7 18h34M18 18v22M30 18v22M15 6v7M33 6v7"/>'
+suitcase-cell: '<rect class="f" x="6" y="16" width="36" height="24" rx="3"/><path d="M18 16v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4M19.5 30l-1 3M28.5 30l-1 3"/><circle class="d" cx="14" cy="27" r="2.2"/><circle class="d" cx="24" cy="27" r="2.2"/><circle class="d" cx="34" cy="27" r="2.2"/>'
+numbered-twins: '<rect class="f" x="5" y="11" width="10" height="26" rx="2"/><rect class="f" x="19" y="11" width="10" height="26" rx="2"/><rect class="f" x="33" y="11" width="10" height="26" rx="2"/><text class="t" x="10" y="28" text-anchor="middle" font-size="11">1</text><text class="t" x="24" y="28" text-anchor="middle" font-size="11">2</text><text class="t" x="38" y="28" text-anchor="middle" font-size="11">3</text>'
+colour-code: '<rect x="5" y="10" width="26" height="28" rx="2"/><rect class="f" x="5" y="19.3" width="26" height="9.4"/><path d="M5 19.3h26M5 28.7h26"/><path class="f" d="M38 20c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.5 2-5 5-9z"/>'
+totals-in-the-crowd: '<path d="M8 11h32M8 18h32M8 41h32"/><rect class="f" x="6" y="23" width="36" height="12" rx="2"/><text class="t" x="24" y="33" text-anchor="middle" font-size="11">&#931;</text>'
+tab-per-month: '<rect x="6" y="8" width="36" height="24" rx="2"/><rect class="f" x="6" y="32" width="9" height="8"/><path d="M6 32v8h36v-8M15 32v8M24 32v8M33 32v8M12 16h24M12 23h16"/>'
+
+# ---------- Smells: Mixed Messages ----------
+impostor-value: '<rect x="4" y="18" width="34" height="16" rx="2"/><text class="t" x="21" y="30" text-anchor="middle" font-size="11">9999</text><circle class="f" cx="38" cy="13" r="7"/><text class="t" x="38" y="17" text-anchor="middle" font-size="10">?</text>'
+many-faced-blank: '<rect class="dash" x="6" y="13" width="36" height="22" rx="3"/><text class="t" x="24" y="29" text-anchor="middle" font-size="14">? ? ?</text>'
+everything-is-text: '<rect class="f" x="5" y="13" width="38" height="22" rx="3"/><text class="t" x="24" y="30" text-anchor="middle" font-size="15">&#8220;42&#8221;</text>'
+naked-number: '<text class="t" x="15" y="31" text-anchor="middle" font-size="18">25</text><rect class="dash f" x="28" y="15" width="15" height="19" rx="3"/>'
+double-duty-column: '<rect x="15" y="5" width="18" height="38" rx="2"/><rect class="f" x="15" y="5" width="18" height="19" rx="2"/><path d="M15 24h18"/><circle cx="24" cy="14.5" r="3.5"/><rect x="20.5" y="30" width="7" height="7"/>'
+spelling-bee: '<ellipse cx="19" cy="14" rx="5" ry="4"/><ellipse cx="29" cy="14" rx="5" ry="4"/><ellipse class="f" cx="24" cy="27" rx="11" ry="8.5"/><path d="M20 19.5v15M27 19v16M35 27h5"/>'
+which-clock: '<circle cx="22" cy="22" r="16"/><path d="M22 12v10l6 4"/><circle class="f" cx="38" cy="38" r="7"/><text class="t" x="38" y="42" text-anchor="middle" font-size="10">?</text>'
+overeager-autocorrect: '<text class="t" x="24" y="17" text-anchor="middle" font-size="12">007</text><path d="M24 22v9M20 27.5l4 4 4-4"/><rect class="f" x="16" y="34" width="16" height="11" rx="2"/><text class="t" x="24" y="43.5" text-anchor="middle" font-size="10">7</text>'
+
+# ---------- Smells: Identity Crises ----------
+name-tag-key: '<rect x="6" y="11" width="36" height="27" rx="3"/><rect class="f" x="6" y="11" width="36" height="10" rx="3"/><path d="M6 21h36M13 28h22M13 33h13"/>'
+key-with-a-backstory: '<circle class="f" cx="13" cy="24" r="8"/><circle class="d" cx="13" cy="24" r="2"/><path d="M21 24h22M30 24v6M36 24v6M42 24v4"/>'
+fuzzy-handshake: '<circle class="f" cx="8" cy="24" r="4.5"/><circle class="f" cx="40" cy="24" r="4.5"/><path d="M15 20c3-3 6-3 9 0s6 3 9 0M15 28c3-3 6-3 9 0s6 3 9 0"/>'
+seeing-double: '<rect class="f" x="6" y="9" width="36" height="10" rx="2"/><rect class="f" x="6" y="29" width="36" height="10" rx="2"/><path d="M19 22h10M19 26h10M12 14h14M12 34h14"/>'
+orphan-rows: '<circle class="f" cx="11" cy="24" r="7"/><path class="dash" d="M19 24h12"/><circle class="dash" cx="38" cy="24" r="6"/>'
+
+# ---------- Smells: Broken Trails ----------
+final-v3-final: '<path class="f" d="M12 6h16l8 8v28H12z"/><path d="M28 6v8h8"/><text class="t" x="24" y="34" text-anchor="middle" font-size="11">v3</text>'
+magic-hands: '<rect x="3" y="19" width="10" height="10" rx="1.5"/><rect x="35" y="19" width="10" height="10" rx="1.5"/><path class="f" d="M24 14c.8 5 3 8 8 10-5 2-7.2 5-8 10-.8-5-3-8-8-10 5-2 7.2-5 8-10z"/>'
+fossil-values: '<path d="M26 24a2 2 0 1 0-4 0a6 6 0 0 0 12 0a10 10 0 0 0-20 0a14 14 0 0 0 28 0"/><circle class="d" cx="24" cy="24" r="1.6"/>'
+amnesia-update: '<path d="M6 13h30M6 23h14M6 33h12"/><path class="f" d="M26 30l10-10 7 7-10 10h-5l-2-2z"/><path d="M24 41h20"/>'
+folklore-definition: '<path class="f" d="M7 9h34v22H23l-9 8v-8H7z"/><circle class="d" cx="16" cy="20" r="2.2"/><circle class="d" cx="24" cy="20" r="2.2"/><circle class="d" cx="32" cy="20" r="2.2"/>'
+number-from-nowhere: '<path class="dash" d="M3 24h12"/><path d="M13 19.5l4.5 4.5-4.5 4.5"/><rect class="f" x="22" y="15" width="22" height="18" rx="2"/><text class="t" x="33" y="28.5" text-anchor="middle" font-size="12">42</text>'
+silent-shift: '<rect x="5" y="8" width="10" height="28" rx="1.5"/><rect class="f" x="19" y="14" width="10" height="28" rx="1.5"/><rect x="33" y="8" width="10" height="28" rx="1.5"/>'
+buried-logic: '<path d="M4 20h40M19 8l10 7M29 8l-10 7"/><text class="t" x="24" y="38" text-anchor="middle" font-size="14" font-style="italic">fx</text>'
+muffled-alarm: '<path class="f" d="M24 8a10 10 0 0 0-10 10v8l-4 6h28l-4-6v-8a10 10 0 0 0-10-10z"/><path d="M21 36a3 3 0 0 0 6 0M7 7l34 34"/>'
+laptop-island: '<rect class="f" x="13" y="9" width="22" height="15" rx="1.5"/><path d="M8 28h32M4 36c3-3 6-3 9 0s6 3 9 0 6-3 9 0 6 3 9 0M10 43c3-3 6-3 9 0s6 3 9 0 6-3 9 0"/>'
+just-in-case-data: '<circle cx="24" cy="11" r="4.5"/><path d="M15 23a9 9 0 0 1 18 0"/><rect class="f" x="7" y="23" width="34" height="18" rx="2"/><path d="M19 31h10"/>'
+
+# ---------- Smells: Intake Traps ----------
+free-text-free-for-all: '<rect x="4" y="13" width="40" height="22" rx="3"/><path d="M9 25c2-6 4 6 6 0s4 6 6 0 4 6 6 0 4 6 6 0M38 18v12"/>'
+the-other-bucket: '<path class="f" d="M10 19h28l-4 22H14z"/><path d="M12 19a12 9 0 0 1 24 0"/><circle class="d" cx="17" cy="8" r="2"/><circle class="d" cx="25" cy="5" r="2"/><circle class="d" cx="32" cy="9" r="2"/>'
+asking-for-the-answer: '<rect x="12" y="5" width="24" height="38" rx="3"/><rect class="f" x="16" y="9" width="16" height="9"/><circle class="d" cx="18" cy="25" r="1.8"/><circle class="d" cx="24" cy="25" r="1.8"/><circle class="d" cx="30" cy="25" r="1.8"/><circle class="d" cx="18" cy="31" r="1.8"/><circle class="d" cx="24" cy="31" r="1.8"/><circle class="d" cx="30" cy="31" r="1.8"/><path d="M17 37h14"/>'
+twice-told-fact: '<rect x="4" y="10" width="17" height="28" rx="2"/><rect x="27" y="10" width="17" height="28" rx="2"/><rect class="f" x="4" y="10" width="17" height="8" rx="2"/><rect class="f" x="27" y="10" width="17" height="8" rx="2"/><path d="M8 24h9M8 30h6M31 24h9M31 30h6"/>'
+forced-guess: '<rect class="f" x="7" y="13" width="28" height="28" rx="5"/><circle class="d" cx="14.5" cy="20.5" r="2.2"/><circle class="d" cx="21" cy="27" r="2.2"/><circle class="d" cx="27.5" cy="33.5" r="2.2"/><text class="t" x="40" y="19" text-anchor="middle" font-size="20">*</text>'
+
+# ---------- Patterns: Structure ----------
+plain-table: '<rect x="6" y="9" width="36" height="30" rx="2"/><rect class="f" x="6" y="9" width="36" height="8" rx="2"/><path d="M6 17h36M6 24.5h36M6 32h36M18 9v30M30 9v30"/>'
+grain-statement: '<path d="M5 11h18M5 20h8M5 29h8M5 38h18"/><circle class="f" cx="27" cy="23" r="9.5"/><path d="M22 23h10M34 30l9 9"/>'
+master-list: '<rect x="8" y="5" width="32" height="38" rx="3"/><circle class="f" cx="16" cy="14" r="3"/><circle class="f" cx="16" cy="24" r="3"/><circle class="f" cx="16" cy="34" r="3"/><path d="M23 14h11M23 24h11M23 34h11"/>'
+define-once: '<circle class="f" cx="24" cy="24" r="17"/><text class="t" x="24" y="30" text-anchor="middle" font-size="16">1&#215;</text>'
+
+# ---------- Patterns: Move ----------
+single-home: '<path d="M5 23L24 7l19 16M11 19v22h26V19"/><rect class="f" x="19.5" y="28" width="9" height="13"/>'
+untouched-original: '<path d="M10 5h18l9 9v29H10z M28 5v9h9"/><rect class="f" x="16.5" y="26" width="14" height="11" rx="1.5"/><path d="M19.5 26v-3a4 4 0 0 1 8 0v3"/>'
+one-way-street: '<rect x="2" y="17" width="10" height="14" rx="1.5"/><rect class="f" x="19" y="17" width="10" height="14" rx="1.5"/><rect class="f" x="36" y="17" width="10" height="14" rx="1.5"/><path d="M13 24h4M15 21.5l2.5 2.5-2.5 2.5M30 24h4M32 21.5l2.5 2.5-2.5 2.5"/>'
+push-button-rerun: '<path d="M38 24a14 14 0 1 1-4.1-9.9M35 6v8.5h-8.5"/><path class="f" d="M20 17l11 7-11 7z"/>'
+data-here-logic-there: '<rect x="3" y="10" width="18" height="28" rx="2"/><path d="M3 19h18M3 28.5h18M12 10v28"/><path class="dash" d="M24.5 5v38"/><rect class="f" x="28" y="14" width="17" height="20" rx="3"/><text class="t" x="36.5" y="29" text-anchor="middle" font-size="13" font-style="italic">fx</text>'
+
+# ---------- Patterns: Trust ----------
+handshake-agreement: '<rect x="9" y="9" width="30" height="34" rx="3"/><rect class="f" x="18" y="5" width="12" height="8" rx="2"/><path d="M15 22l2.5 2.5 4-5M26 22h8M15 33l2.5 2.5 4-5M26 33h8"/>'
+tripwire: '<path class="f" d="M24 5l8 13H16z"/><path d="M8 14v28M40 14v28M24 10v3"/><path class="dash" d="M8 27h32"/><circle class="d" cx="24" cy="15.3" r="0.9"/>'
+freeze-frame: '<rect x="5" y="14" width="38" height="25" rx="3"/><path d="M17 14l3-5h8l3 5"/><circle class="f" cx="24" cy="26.5" r="7.5"/><circle class="d" cx="24" cy="26.5" r="2"/>'
+rehearsal-stage: '<circle cx="14" cy="9" r="4"/><circle cx="14" cy="39" r="4"/><circle class="f" cx="34" cy="17" r="4.5"/><path d="M14 13v22M34 21.5c0 9-20 3-20 10"/>'
+
+# ---------- Patterns: Look after ----------
+data-map: '<circle class="f" cx="9" cy="11" r="5"/><circle class="f" cx="9" cy="37" r="5"/><circle cx="24" cy="24" r="4.5"/><circle class="f" cx="40" cy="24" r="5"/><path d="M13 14.5l7 6.5M13 33.500l7-6.5M28.500 24h6.500"/>'
+safety-net: '<path class="f" d="M24 5l15 6v11c0 10-6.500 17-15 21C15.500 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/>'
+travel-light: '<path class="f" d="M11 39c0-17 9-29 27-31-2 14-11 24-23 26"/><path d="M9 42l18-21"/>'

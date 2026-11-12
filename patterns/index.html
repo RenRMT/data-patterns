@@ -1,0 +1,38 @@
+---
+layout: default
+title: Data patterns
+---
+<header class="page-head">
+  <p class="eyebrow"><span class="mark" aria-hidden="true"></span>Catalogue</p>
+  <h1 style="margin-top:8px">Data patterns</h1>
+  <p class="lead">
+    Sixteen habits in four groups. Each is a problem, a principle, and what
+    it looks like in Excel, in Power Query / Power BI and in Databricks.
+  </p>
+</header>
+
+<div class="prose" style="margin-top:18px">
+  <p>
+    Data moves through four stages: it is structured, moved, trusted and
+    looked after. Group A applies to every table along the way. Apply the
+    patterns in proportion to what is at stake:
+    <a href="{{ '/guides/how-much-is-enough/' | relative_url }}">How much is enough</a>
+    says which ones a one-off analysis needs and which ones a donor report needs.
+  </p>
+</div>
+
+<input class="filter" type="search" data-filter placeholder="Filter by name, symptom or search term" aria-label="Filter patterns">
+
+{% for g in site.data.pattern_groups %}
+{% assign items = site.patterns | where: "group", g.id | sort: "order" %}
+<section class="section" id="{{ g.id }}" data-filter-group>
+  <div class="section-head">
+    <h2>{{ g.title }}</h2>
+    <span class="meta">Group {{ g.letter }} · patterns {{ items.first.order }} to {{ items.last.order }}</span>
+  </div>
+  <p class="section-desc">{{ g.description }}</p>
+  <div class="grid">
+    {% for i in items %}{% include card.html item=i %}{% endfor %}
+  </div>
+</section>
+{% endfor %}

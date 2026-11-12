@@ -1,0 +1,47 @@
+/* REN Data colour tokens. Source: RenRMT/color-picker ren.json → style-guide _data/palette.json, and rendata.nl getij.css. */
+:root{
+/* Brand colours */
+--ren-primary-teal:#1C6758;--ren-dark-teal:#335252;--ren-black:#191919;--ren-light-grey:#F3F3F3;--ren-white:#FFFFFF;
+/* Neutral shades */
+--ren-neutral:#F9F9F9;--ren-platinum:#ECECEC;--ren-steel:#B8B8B8;--ren-slate:#5C6B68;
+/* Data colours, contrasting order (default). Take from the left, never skip. */
+--data-1:#338877;--data-2:#FFDD77;--data-3:#2B5B9B;--data-4:#FF9779;--data-5:#88CCFF;--data-6:#BC3C4C;--data-7:#FFBBDD;--data-8:#8833AA;--data-other:#B8B8B8;
+/* Ramps, light (1) to dark (10). Step 6 is the base colour. */
+--teal-1:#EBF3F1;--teal-2:#D6E7E4;--teal-3:#ADCFC9;--teal-4:#85B8AD;--teal-5:#5CA092;--teal-6:#338877;--teal-7:#296D5F;--teal-8:#1F5247;--teal-9:#143630;--teal-10:#0A1B18;
+--jasmine-1:#FFFCF1;--jasmine-2:#FFF8E4;--jasmine-3:#FFF1C9;--jasmine-4:#FFEBAD;--jasmine-5:#FFE492;--jasmine-6:#FFDD77;--jasmine-7:#CCB15F;--jasmine-8:#998547;--jasmine-9:#665830;--jasmine-10:#332C18;
+--baltic-1:#EAEFF5;--baltic-2:#D5DEEB;--baltic-3:#AABDD7;--baltic-4:#809DC3;--baltic-5:#557CAF;--baltic-6:#2B5B9B;--baltic-7:#22497C;--baltic-8:#1A375D;--baltic-9:#11243E;--baltic-10:#09121F;
+--coral-1:#FFF5F2;--coral-2:#FFEAE4;--coral-3:#FFD5C9;--coral-4:#FFC1AF;--coral-5:#FFAC94;--coral-6:#FF9779;--coral-7:#CC7961;--coral-8:#995B49;--coral-9:#663C30;--coral-10:#331E18;
+--sky-1:#F3FAFF;--sky-2:#E7F5FF;--sky-3:#CFEBFF;--sky-4:#B8E0FF;--sky-5:#A0D6FF;--sky-6:#88CCFF;--sky-7:#6DA3CC;--sky-8:#527A99;--sky-9:#365266;--sky-10:#1B2933;
+--cherry-1:#F8ECED;--cherry-2:#F2D8DB;--cherry-3:#E4B1B7;--cherry-4:#D78A94;--cherry-5:#C96370;--cherry-6:#BC3C4C;--cherry-7:#96303D;--cherry-8:#71242E;--cherry-9:#4B181E;--cherry-10:#260C0F;
+--blush-1:#FFF8FC;--blush-2:#FFF1F8;--blush-3:#FFE4F1;--blush-4:#FFD6EB;--blush-5:#FFC9E4;--blush-6:#FFBBDD;--blush-7:#CC96B1;--blush-8:#997085;--blush-9:#664B58;--blush-10:#33252C;
+--violet-1:#F3EBF7;--violet-2:#E7D6EE;--violet-3:#CFADDD;--violet-4:#B885CC;--violet-5:#A05CBB;--violet-6:#8833AA;--violet-7:#6D2988;--violet-8:#521F66;--violet-9:#361444;--violet-10:#1B0A22;
+/* Status colours, for dashboards. One meaning each, always shown as a square marker with a sign and a word. Checked for colour blindness: worst-case ΔE 29 between any two. */
+--status-on-track:#2B5B9B;--status-watch:#FFDD77;--status-off-track:#BC3C4C;--status-done:#88CCFF;--status-none:#B8B8B8;
+--status-on-track-ink:#FFFFFF;--status-watch-ink:#191919;--status-off-track-ink:#FFFFFF;--status-done-ink:#191919;--status-none-ink:#191919;
+}
+/* Semantic aliases, light theme (default) */
+:root,[data-theme="light"]{
+--bg:#F9F9F9;--surface:#FFFFFF;--surface-sunk:#EBF3F1;--sidebar:#EEF4F2;--sidebar-line:#E0ECEA;
+--ink:#191919;--heading:#191919;--muted:#5C6B68;--brand:#1C6758;--link:#1C6758;
+--line:#D6E7E4;--line-strong:#ADCFC9;--rule-data:#ECECEC;
+--accent:#FF9779;--accent-hover:#FFAC94;--accent-ink:#191919;--highlight:#FFD5C9;
+--chip-bg:#EEF4F2;--code-bg:#EBF3F1;--stripe-a:#E0ECEA;--stripe-b:#EEF4F2;
+--tok-key:#1C6758;--tok-str:#995B49;--tok-com:#5C8A80;
+--wave-1:#D6E7E4;--wave-2:#ADCFC9;--wave-3:#1C6758;
+--danger:#96303D;--danger-bg:#F8ECED;--danger-line:#D78A94;
+--status-on-track-bg:#D5DEEB;--status-watch-bg:#FFF1C9;--status-off-track-bg:#F2D8DB;--status-done-bg:#E7F5FF;--status-none-bg:#F3F3F3;
+--dash-canvas:#F3F3F3;
+--text-body:var(--ink);--text-muted:var(--muted);--text-link:var(--link);--surface-card:var(--surface);--surface-page:var(--bg);--surface-note:var(--code-bg);
+}
+[data-theme="dark"]{
+--bg:#0F2723;--surface:#143630;--surface-sunk:#0A1B18;--sidebar:#0A1B18;--sidebar-line:#143630;
+--ink:#EBF3F1;--heading:#EBF3F1;--muted:#85B8AD;--brand:#EBF3F1;--link:#85B8AD;
+--line:#1F5247;--line-strong:#296D5F;--rule-data:#1F5247;
+--accent:#FF9779;--accent-hover:#FFC1AF;--accent-ink:#191919;--highlight:#663C30;
+--chip-bg:#143630;--code-bg:#0A1B18;--stripe-a:#0F2723;--stripe-b:#143630;
+--tok-key:#85B8AD;--tok-str:#FFD5C9;--tok-com:#5CA092;
+--wave-1:#143630;--wave-2:#1F5247;--wave-3:#296D5F;
+--danger:#E4B1B7;--danger-bg:#4B181E;--danger-line:#96303D;
+--status-on-track-bg:#11243E;--status-watch-bg:#665830;--status-off-track-bg:#4B181E;--status-done-bg:#365266;--status-none-bg:#143630;
+--dash-canvas:#0A1B18;
+}

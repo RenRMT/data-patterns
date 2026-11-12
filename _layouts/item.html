@@ -1,0 +1,115 @@
+---
+layout: default
+---
+{%- assign kind = page.collection -%}
+{%- if kind == 'smells' -%}
+  {%- assign cat = site.data.smell_categories | where: "id", page.category | first -%}
+  {%- assign kind_label = "Data smells" -%}
+  {%- assign all = site.smells | sort: "order" -%}
+{%- else -%}
+  {%- assign cat = site.data.pattern_groups | where: "id", page.group | first -%}
+  {%- assign kind_label = "Data patterns" -%}
+  {%- assign all = site.patterns | sort: "order" -%}
+{%- endif -%}
+{%- assign prev = nil -%}{%- assign next = nil -%}{%- assign found = false -%}
+{%- for it in all -%}
+  {%- if found and next == nil -%}{%- assign next = it -%}{%- endif -%}
+  {%- if it.url == page.url -%}{%- assign found = true -%}{%- endif -%}
+  {%- unless found -%}{%- assign prev = it -%}{%- endunless -%}
+{%- endfor -%}
+
+<article class="item item--{{ kind }}">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a> <span>/</span>
+    <a href="{{ '/' | append: kind | append: '/' | relative_url }}">{{ kind_label }}</a> <span>/</span>
+    <a href="{{ '/' | append: kind | append: '/#' | append: cat.id | relative_url }}">{{ cat.title }}</a>
+  </nav>
+
+  <header class="item-head">
+    <span class="tile tile--lg">{% include icon.html name=page.icon %}</span>
+    <div>
+      <p class="eyebrow"><span class="mark" aria-hidden="true"></span>
+        {%- if kind == 'smells' -%}Data smell{%- else -%}Data pattern {{ page.order }}{%- endif %} · {{ cat.title }}
+      </p>
+      <h1>{{ page.title }}</h1>
+      <p class="plain">{{ page.plain }}</p>
+      {% if page.aka %}<p class="aka">Also known as: {{ page.aka | join: ", " }}</p>{% endif %}
+    </div>
+  </header>
+
+  {% if page.symptom %}
+  <div class="symptom">
+    <p class="eyebrow">{% if kind == 'smells' %}You will hear{% else %}The symptom to listen for{% endif %}</p>
+    <q>{{ page.symptom }}</q>
+  </div>
+  {% endif %}
+
+  {% if page.guarantee %}
+  <div class="guarantee">
+    <span class="eyebrow"><span class="mark" aria-hidden="true"></span>Promise</span>
+    <p>{{ page.guarantee }}</p>
+  </div>
+  {% endif %}
+
+  <div class="stack-switch" role="group" aria-label="Show examples for">
+    <span>Show examples for</span>
+    <button type="button" data-set-stack="">All stacks</button>
+    <button type="button" data-set-stack="excel">Excel</button>
+    <button type="button" data-set-stack="powerbi">Power Query / Power BI</button>
+    <button type="button" data-set-stack="databricks">Databricks</button>
+  </div>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {% if page.first_step %}
+  <aside class="first-step">
+    <p class="eyebrow"><span class="mark" aria-hidden="true"></span>First step</p>
+    <p>{{ page.first_step }}</p>
+  </aside>
+  {% endif %}
+
+  {% if kind == 'smells' and page.patterns %}
+  <section class="related">
+    <h2>Patterns that treat it</h2>
+    <div class="grid">
+      {% for slug in page.patterns %}
+        {% capture purl %}/patterns/{{ slug }}/{% endcapture %}
+        {% assign p = site.patterns | where: "url", purl | first %}
+        {% if p %}{% include card.html item=p %}{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if kind == 'patterns' %}
+  {% assign myslug = page.url | split: "/" | last %}
+  {% assign treated = "" | split: "" %}
+  {% for s in site.smells %}{% if s.patterns contains myslug %}{% assign treated = treated | push: s %}{% endif %}{% endfor %}
+  {% if treated.size > 0 %}
+  <section class="related">
+    <h2>Smells it treats</h2>
+    <div class="grid">
+      {% assign treated = treated | sort: "order" %}
+      {% for s in treated %}{% include card.html item=s %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  {% endif %}
+
+  {% if page.search %}
+  <section class="terms">
+    <h2>Search terms</h2>
+    <p>The data engineering terms for this idea. Search for these to read further.</p>
+    <ul class="tags">
+      {% for t in page.search %}<li>{{ t }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <nav class="pager" aria-label="More in this catalog">
+    {% if prev %}<a class="pager-prev" href="{{ prev.url | relative_url }}"><span>Previous</span>{{ prev.title }}</a>{% else %}<span></span>{% endif %}
+    {% if next %}<a class="pager-next" href="{{ next.url | relative_url }}"><span>Read next</span>{{ next.title }}</a>{% endif %}
+  </nav>
+</article>

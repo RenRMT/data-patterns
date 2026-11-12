@@ -1,0 +1,9 @@
+{%- assign i = include.item -%}
+{%- capture keys -%}{{ i.title }} {{ i.plain }} {{ i.aka | join: " " }} {{ i.search | join: " " }} {{ i.symptom }}{%- endcapture -%}
+<a class="card card--{{ i.collection }}" href="{{ i.url | relative_url }}" data-k="{{ keys | downcase | escape }}">
+  <span class="tile">{% include icon.html name=i.icon %}</span>
+  <span class="card-text">
+    <strong>{{ i.title }}</strong>
+    <span>{{ i.plain }}</span>
+  </span>
+</a>

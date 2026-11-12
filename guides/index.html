@@ -1,0 +1,21 @@
+---
+layout: default
+title: Guides
+---
+<header class="page-head">
+  <p class="eyebrow"><span class="mark" aria-hidden="true"></span>Guides</p>
+  <h1 style="margin-top:8px">Guides</h1>
+  <p class="lead">How to use the catalogue: where to start, how far to go, and how to bring a team along.</p>
+</header>
+
+{% assign guides = site.pages | where: "guide", true | sort: "order" %}
+<ul class="assess" style="margin-top:32px">
+  {% for g in guides %}
+  <li>
+    <span>
+      <a href="{{ g.url | relative_url }}"><strong>{{ g.title }}</strong></a>
+      <span class="meta" style="font:15px/1.5 var(--font-sans)">{{ g.lead }}</span>
+    </span>
+  </li>
+  {% endfor %}
+</ul>

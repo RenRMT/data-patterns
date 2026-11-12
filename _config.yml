@@ -1,0 +1,42 @@
+title: Data smells and patterns
+brand: REN Data
+tagline: Data smells and data patterns. Habits before tools, in plain language.
+description: >-
+  A plain-language, tool-agnostic catalog of data smells and data patterns,
+  with examples for Excel, Power Query / Power BI and Databricks.
+author: REN Data
+
+# Project site of the RenRMT account, served under the rendata.nl custom domain.
+# The repository name must match baseurl.
+url: "https://rendata.nl"
+baseurl: "/data-patterns"
+
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+collections:
+  smells:
+    output: true
+    permalink: /smells/:name/
+  patterns:
+    output: true
+    permalink: /patterns/:name/
+
+defaults:
+  - scope: { path: "", type: smells }
+    values: { layout: item }
+  - scope: { path: "", type: patterns }
+    values: { layout: item }
+  - scope: { path: "", type: pages }
+    values: { layout: page }
+
+exclude:
+  - notes
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

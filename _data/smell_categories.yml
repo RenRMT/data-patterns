@@ -1,0 +1,30 @@
+- id: shape
+  title: Shape Shifters
+  plain: Problems with the layout of the table
+  description: >-
+    The data is laid out for a human eye instead of for a tool. It looks tidy
+    on screen, and every analysis starts with an hour of reshaping.
+- id: meaning
+  title: Mixed Messages
+  plain: Problems with what a value means
+  description: >-
+    The values are there, but nobody can say for certain what they mean.
+    Sums and averages come out silently wrong.
+- id: identity
+  title: Identity Crises
+  plain: Problems with telling records apart
+  description: >-
+    It is unclear when two rows describe the same thing, or how a row in one
+    table finds its partner in another.
+- id: process
+  title: Broken Trails
+  plain: Problems with how data is made, changed and kept
+  description: >-
+    The data may be fine today, but nobody can retrace how it got here,
+    repeat it next month, or get it back when it is gone.
+- id: intake
+  title: Intake Traps
+  plain: Problems built in at the form
+  description: >-
+    The problem is created at the moment of collection. Fixing it here is
+    cheaper than fixing it anywhere downstream.
