@@ -5,17 +5,16 @@ layout: default
 {%- assign patterns = site.patterns | sort: "order" -%}
 
 <section class="hero">
-  <p class="eyebrow"><span class="mark" aria-hidden="true"></span>A field guide, in plain language</p>
+  <p class="eyebrow"><span class="mark" aria-hidden="true"></span>A plain language guide to</p>
   <h1>Data smells and data patterns</h1>
   <p class="lead">
-    Good data practice is the same whether the data sits in three Excel
-    files, a Power BI model or Databricks. Only the mechanism changes. I
-    measure data maturity by the habits a team has, not by the tools it bought.
+    Good data practice is the same whether your data sits in Delta Lake or three Excel
+    files. The tools and mechanisms may change, but good habits stay the same.  
   </p>
   <p>
-    This site names the things that go wrong (smells) and the habits that
-    prevent them (patterns), with examples for each of the three stacks and
-    the data engineering terms to search for if you want to read further.
+    On this site I give names to the things that go wrong (smells) and the habits that
+    prevent them (patterns), with examples in Excel, Power Query and Databricks, and
+    the relevant data engineering terms to search for if you want to read further.
   </p>
 </section>
 
@@ -23,22 +22,22 @@ layout: default
   <a class="door door--smells" href="{{ '/smells/' | relative_url }}">
     <span class="tile">{% include icon.html name="spelling-bee" %}</span>
     <strong>Data smells</strong>
-    <span>A smell is a sign that something may be wrong, not proof that it is. It means "ask why", not "fix this".</span>
+    <span>A smell is a sign that something more structural may be wrong in the data. It is an early indicator of technical debt.</span>
     <span class="count">{{ smells.size }} smells in {{ site.data.smell_categories.size }} families</span>
   </a>
   <a class="door" href="{{ '/patterns/' | relative_url }}">
     <span class="tile">{% include icon.html name="one-way-street" %}</span>
     <strong>Data patterns</strong>
-    <span>A pattern is a habit that gives a guarantee you can check, in whatever tool you have.</span>
+    <span>A pattern provides a reusable solution for common problems, that works in any tool you use.</span>
     <span class="count">{{ patterns.size }} patterns in {{ site.data.pattern_groups.size }} groups</span>
   </a>
 </div>
 
 <section class="section">
-  <div class="section-head"><h2>Why this matters</h2></div>
+  <div class="section-head"><h2>Why this is important</h2></div>
   <p class="section-desc">
-    Spreadsheet errors are frequent, silent and unrelated to skill. The
-    remedy is structure and checks, not asking people to be more careful.
+    Spreadsheet errors are frequent, silent and unrelated to skill. Most errors are made by very careful people,
+    so the remedy is not to ask people to pay more attention. Instead, add structure and checks.
   </p>
   <ul class="bans">
     <li><b>91%</b>of 54 real-world spreadsheets audited since 1997 contained errors.<cite>Panko, 2008</cite></li>
@@ -48,38 +47,16 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="section-head">
-    <h2>Start from a symptom</h2>
-    <a href="{{ '/patterns/' | relative_url }}">All data patterns</a>
-  </div>
-  <p class="section-desc">Each pattern answers a complaint you have probably heard this month.</p>
-  <div class="prose" style="margin-top:16px;max-width:none">
-    <table>
-      <thead><tr><th>You hear</th><th>Pattern</th><th>What it guarantees</th></tr></thead>
-      <tbody>
-        {% for p in patterns %}
-        <tr>
-          <td>“{{ p.symptom }}”</td>
-          <td><a href="{{ p.url | relative_url }}">{{ p.title }}</a></td>
-          <td>{{ p.guarantee }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head"><h2>How a page is built</h2></div>
+  <div class="section-head"><h2>How I built the pages</h2></div>
   <div class="prose" style="margin-top:8px">
     <ul>
       <li><strong>A name you can say in a meeting.</strong> "That's a suitcase cell" is easier than "that violates first normal form".</li>
-      <li><strong>Plain language first.</strong> What you see, why it hurts, what to do.</li>
-      <li><strong>Three stacks.</strong> Excel, Power Query / Power BI, and Databricks (Python and SQL). Pick yours with the switch on each page; the choice is remembered.</li>
-      <li><strong>Search terms last.</strong> The data engineering vocabulary, so you can find the wider literature.</li>
+      <li><strong>Plain language first.</strong> What you see, why it hurts, and what to do about it.</li>
+      <li><strong>Common examples.</strong> Excel, Power Query / Power BI, and Databricks (Python and SQL).</li>
+      <li><strong>Search terms.</strong> The data engineering vocabulary, so you can find the wider literature.</li>
     </ul>
     <p>
-      New here? Read <a href="{{ '/guides/how-much-is-enough/' | relative_url }}">How much is enough</a>,
+      Not sure where to start? Read <a href="{{ '/guides/how-much-is-enough/' | relative_url }}">How much is enough</a>,
       then take the <a href="{{ '/guides/self-assessment/' | relative_url }}">self-assessment</a> for one dataset.
     </p>
   </div>

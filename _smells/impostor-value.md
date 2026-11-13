@@ -27,7 +27,9 @@ Sums and averages include the impostor and come out wrong without any error. Zer
 
 Leave the value truly empty, and if the reason matters, record it in a separate column. Agree the convention in the handover contract, and add a check for the known impostors so new ones are caught on arrival.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -28,7 +28,9 @@ Each retyping is a fresh chance of error, and a second copy is a second version 
 
 Name one home for each fact, as close as possible to where it happens. The other places stop collecting it and read from the home, by link or query. Where two systems must both hold it, one is the source and the other is fed from it automatically.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -28,7 +28,9 @@ A missing match becomes a zero and is added into the total. The problem has not 
 
 Make failures loud and countable. Replace an error with a label that cannot be mistaken for data, count the labels, and stop the process when the count is not zero. Handle the *expected* exceptions explicitly and let the unexpected ones fail.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

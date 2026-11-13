@@ -27,7 +27,9 @@ The course of events disappears. Anything that depends on how things *were* (a p
 
 When the history matters, add instead of overwrite. Either keep a log with one row per change (what, from, to, when, who), or give each version of a record a validity period. Decide per column whether history matters; for a corrected typo it does not.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

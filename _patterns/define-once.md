@@ -32,7 +32,9 @@ An indicator reference sheet records:
 - how double-counting is handled (unique people versus contacts)
 - owner and date of last change
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

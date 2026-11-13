@@ -27,7 +27,9 @@ A derived value freezes at the moment of entry and hides how it was reached. Eac
 
 Collect the atoms and derive the rest in one place, with one rule. Ask for date of birth, the parts, the numerator and the denominator. If respondents need to see the total, let the form calculate and display it.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

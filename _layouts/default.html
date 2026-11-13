@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
 </head>
-<body>
+<body id="top">
   <a class="skip" href="#main">Skip to content</a>
   <div class="shell">
     <aside class="sidebar">
@@ -59,12 +59,7 @@
     <main id="main">
       {{ content }}
       <footer class="foot">
-        <p>
-          Excel formulas on this site use English function names and comma
-          separators. In a Dutch-locale Excel, use the local function names
-          and semicolons.
-        </p>
-        <p>Structure inspired by <a href="https://refactoring.guru/">Refactoring.Guru</a>.</p>
+        <p><a href="#top">Back to top ↑</a></p>
       </footer>
     </main>
   </div>

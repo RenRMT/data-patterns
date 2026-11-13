@@ -33,7 +33,9 @@ A data dictionary lists, for each column: name, meaning, type, unit, allowed val
 
 Each table also carries its own provenance: where each row came from and when it was loaded.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

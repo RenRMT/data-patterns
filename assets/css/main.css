@@ -140,8 +140,10 @@ html[data-stack="databricks"] .stack:not([data-stack="databricks"]) { display: n
 
 .first-step { max-width: var(--measure); margin-top: var(--gap-section); padding: 18px 22px 20px; background: var(--code-bg); border-radius: var(--radius); display: flex; flex-direction: column; gap: 6px; }
 .first-step p { margin: 0; }
-.related, .terms { margin-top: var(--gap-section); }
-.related h2, .terms h2 { margin-bottom: 0; }
+.related { margin-top: var(--gap-section); }
+.related h2 { margin-bottom: 0; }
+.terms { margin-top: 16px; }
+.terms h2 { margin: 0 0 8px; font: 12px var(--font-mono); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--muted); }
 .terms > p { margin: 6px 0 12px; font-size: 15px; color: var(--muted); max-width: var(--measure); }
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; }
 .tags li { display: inline-flex; align-items: center; gap: 6px; font: 13px/1.4 var(--font-mono); color: var(--muted); }

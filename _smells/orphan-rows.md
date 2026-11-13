@@ -27,7 +27,9 @@ Orphans disappear without an error. A join that only keeps matches drops them, a
 
 Check on every load that each reference exists in its master list, and list the ones that do not. Then decide per case: add the missing entry to the master list, correct the reference, or assign it to an explicit "unknown" entry so the row still counts.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -27,7 +27,9 @@ This is the most expensive silent error there is, because the arithmetic works. 
 
 Put the unit and basis in the column name (`revenue_eur_excl_vat`, `weight_kg`), or in a separate unit column when it varies per row. Record it in the data dictionary. Convert to one unit in the clean layer and keep the original beside it.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

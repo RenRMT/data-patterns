@@ -28,7 +28,9 @@ Everything you count or report on (people, households, sites, partners, indicato
 
 IDs survive respelling, translation and reorganisation.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

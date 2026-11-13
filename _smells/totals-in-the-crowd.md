@@ -27,7 +27,9 @@ Every sum counts twice. The total rows are typed or calculated once and go stale
 
 One level per table. Aggregates are derived when needed, not stored among the records. If a source can only deliver totals, they go in a separate table with its own grain statement.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

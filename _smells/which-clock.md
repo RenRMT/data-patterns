@@ -28,7 +28,9 @@ Counts per day depend on where midnight falls. A late-evening event in one time 
 
 Store moments in UTC and derive local time when presenting. Name the column for what it measures: `occurred_at`, `recorded_at`, `submitted_at`. For things that only have a date (a birthday, a reporting day), store a date, not a timestamp.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

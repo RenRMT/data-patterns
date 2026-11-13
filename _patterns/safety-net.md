@@ -27,7 +27,9 @@ For anything that cannot live there, keep three copies, on two kinds of storage,
 
 Loss also happens without anyone noticing. In 2020 Public Health England left 15,841 COVID-19 cases out of its daily reporting because results were imported into the old `.xls` format, which stops at 65,536 rows. Nothing warned anyone. A row count compared between source and destination would have.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

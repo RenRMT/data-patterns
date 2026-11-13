@@ -27,7 +27,9 @@ A new period is a change to the structure of the table instead of a new row. Not
 
 Store it long: one row per combination, with a `period` column and a `value` column. The wide view is rebuilt on demand with a pivot table. If headers pack two variables together (`Q1_female`), unpivot first and then split the name into two columns.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

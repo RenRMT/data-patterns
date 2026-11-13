@@ -30,7 +30,9 @@ A corrections log has these columns: record ID, field, original value, corrected
 
 Logic can then be read and reviewed. A correction keeps its original value and reason, and is reapplied automatically when the data is reloaded.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

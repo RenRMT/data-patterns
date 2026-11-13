@@ -6,24 +6,23 @@ title: Data smells
   <p class="eyebrow"><span class="mark" aria-hidden="true"></span>Catalogue</p>
   <h1 style="margin-top:8px">Data smells</h1>
   <p class="lead">
-    A data smell is the counterpart of a code smell: a sign that something
-    may be wrong, not proof that it is. A smell you accept on purpose is
-    fine, as long as you write down why.
+    A data smell is the counterpart of a code smell: a surface-level sign that something
+    may be wrong with your data. They do not immediately break a database, pipeline or spreadsheet,
+    but they indicate an increased risk of tech debt or silent failures in the future.
   </p>
 </header>
 
 <div class="prose" style="margin-top:18px">
   <p>
-    Fixing at entry is cheaper than fixing in storage, which is cheaper than
-    fixing in the pipeline, which is cheaper than fixing in the report. Each
-    step later multiplies the cost and the number of people who need to know
-    about the fix.
+    Fixing an issue at data entry is less costly than fixing it in storage, which is less costly than
+    fixing in in a report. The later you fix it, the higher the cost and the number of people who need 
+    to know about the fix.
   </p>
   <p>
-    And where a code smell points at a design problem, a data smell usually
-    points at an organisational one. Department names as free text mean that
-    nobody owns the department list. In those cases the fix is a
-    conversation about ownership, not a script.
+    While a code smell points at a design problem, a data smell usually
+    points at an organisational one. If department names are entered as free text it means that
+    nobody is responsible for the department list. In those cases the right approach is to start a
+    conversation about data ownership, not writing a script.
   </p>
 </div>
 
@@ -44,14 +43,7 @@ title: Data smells
 {% endfor %}
 
 <section class="section">
-  <div class="section-head"><h2>When it is not a smell</h2></div>
   <div class="prose" style="margin-top:8px">
-    <ul>
-      <li>Denormalised tables in a reporting layer are a deliberate choice.</li>
-      <li>Wide format in a final product is exactly right.</li>
-      <li>Redundancy for speed is fine, when it is derived and can be refreshed.</li>
-      <li>Received data may be messy. It should be kept unchanged; the cleaning belongs in the next layer.</li>
-    </ul>
     <p>Short on time? The <a href="{{ '/guides/ten-minute-scan/' | relative_url }}">ten-minute scan</a> finds most smells in a new dataset.</p>
   </div>
 </section>

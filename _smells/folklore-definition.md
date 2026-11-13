@@ -31,7 +31,9 @@ Write the definition next to the thing it defines, with a date and an owner. Whe
 
 The quickest test: compare one total with a figure the department itself uses. If they differ, you have found a difference in definition, and that is the most useful finding of the day.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

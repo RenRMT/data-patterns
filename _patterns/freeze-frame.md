@@ -29,7 +29,9 @@ Each time numbers leave the team, save a dated, read-only snapshot of the output
 
 Late corrections are normal. A snapshot lets you show exactly what changed and why.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

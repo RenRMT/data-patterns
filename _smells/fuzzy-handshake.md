@@ -28,7 +28,9 @@ An exact match on text misses every spelling variant. A fuzzy match makes decisi
 
 Make the matching decision once, by a person, and store it as data: a crosswalk table with the ID in system A beside the ID in system B. Fuzzy matching is useful for proposing candidate rows for that table. It should not run unattended inside the pipeline.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

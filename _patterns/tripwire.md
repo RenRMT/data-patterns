@@ -35,7 +35,9 @@ Written checks catch the same errors every time. A second reviewer catches what 
 
 An error must stay visible until someone deals with it. A check that turns a failed lookup into a zero is the opposite of a tripwire.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -27,7 +27,9 @@ Information is lost at the moment of collection and cannot be recovered. The dat
 
 Pair the list with an explanation field that is required when "Other" is chosen. Monitor the share of "Other", and when it passes an agreed level, read the explanations and extend the list. Someone owns the list and reviews it on a schedule.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

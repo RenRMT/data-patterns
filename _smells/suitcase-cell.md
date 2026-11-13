@@ -27,7 +27,9 @@ The values cannot be filtered, counted or joined. Splitting always goes wrong on
 
 For a fixed number of parts, split into columns (`name`, `department`, `email`). For a variable number, move the values to their own table with one row per value and the ID of the parent record.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

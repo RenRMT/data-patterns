@@ -27,7 +27,9 @@ Every parser breaks on the exception. Filters miss rows (`= "CLOSED"` skips `CLO
 
 One column, one concept. Split the second meaning into its own column (`status` and `closure_reason`; `amount` and `transaction_type`). Notes go in a `comment` column.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

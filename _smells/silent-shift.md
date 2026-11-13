@@ -28,7 +28,9 @@ The worst outcome is that nothing breaks. Values land in the wrong column or und
 
 Agree with the supplier that changes are announced, and do not rely on the agreement: check every delivery against the expected columns, types and allowed values, and stop on a mismatch. Refer to columns by name, never by position.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 
