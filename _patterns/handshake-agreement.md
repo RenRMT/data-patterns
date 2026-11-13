@@ -33,7 +33,9 @@ A contract specifies:
 
 Consolidation is then the same for every source, and the sender hears about a problem while they can still fix it.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

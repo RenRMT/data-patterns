@@ -31,7 +31,9 @@ Data at a different grain goes in a different table. The grain decides what can 
 
 The columns that make a row unique at that grain are the natural place for a uniqueness check: if two rows share them, the grain statement is wrong or the data is.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

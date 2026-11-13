@@ -28,7 +28,9 @@ The stored value looks as trustworthy as the rest, and it disagrees with the dat
 
 Calculate when reading: store the date of birth and derive the age. Where storing the result is necessary for speed, treat it as a copy with an agreed refresh, and record when it was last calculated.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

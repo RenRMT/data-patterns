@@ -27,7 +27,9 @@ A plausible invented value is worse than a blank. A blank can be counted and han
 
 Give an explicit way out and record it: an "unknown" option, a "not applicable" tick box, or a reason field. Make a field required only when the process cannot continue without it. Then monitor how often the way out is used, per question and per enumerator.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -27,7 +27,9 @@ The table has a built-in maximum that reality will exceed. Every query and formu
 
 The repeated thing is an entity of its own. Give it a table with one row per value, the parent's ID, and a column for what distinguishes the values (type, order, date).
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

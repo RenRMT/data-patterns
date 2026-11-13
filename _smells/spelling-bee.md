@@ -29,7 +29,9 @@ It usually means that nobody owns the list.
 
 Keep a reference table of allowed values, and a mapping table that translates historical variants to them. The mapping is data: visible, reviewable and reusable. Prevent new variants with a dropdown at entry.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

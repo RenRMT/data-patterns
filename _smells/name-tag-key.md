@@ -27,7 +27,9 @@ People marry, organisations merge, addresses and e-mail change. When the identif
 
 Give each record a meaningless ID, assigned once and never changed or reused. Names, e-mail and the rest become ordinary attributes in the master list, free to change.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

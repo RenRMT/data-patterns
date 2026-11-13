@@ -27,7 +27,9 @@ Work on a copy, test it, then replace the live version. Keep earlier versions an
 - Every release leaves a **note**: what changed, why, who, when.
 - The previous version **can be restored**.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

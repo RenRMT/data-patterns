@@ -31,7 +31,9 @@ Separate the work into three layers. Each reads from the one before and never wr
 
 A wrong number can then be traced to the source, the cleaning or the indicator logic. Several reports can share one clean dataset instead of each cleaning their own.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

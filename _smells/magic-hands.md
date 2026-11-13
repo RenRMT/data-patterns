@@ -28,7 +28,9 @@ A manual step is invisible, cannot be checked and is done slightly differently e
 
 Ask what kind of step it is. If it is a **rule**, write it into the process. If it is a **judgement**, record each judgement as a row in a mapping table or corrections log, so it is applied the same way next time and someone can review it. Then tell the source, or you will make the same repair every month.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

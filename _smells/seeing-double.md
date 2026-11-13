@@ -27,7 +27,9 @@ Without a definition, removing duplicates is guesswork. Remove too few and figur
 
 Write down the business key: the set of columns that makes a row unique at its grain (`site_id` + `month` + `indicator`). Put a uniqueness check on it. Decide which copy wins when two rows share the key (the latest submission, usually) and apply that rule in processing, keeping the received rows untouched.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

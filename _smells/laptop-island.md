@@ -30,7 +30,9 @@ Loss can be partial and silent. The old `.xls` format stops at 65,536 rows: in 2
 
 Move working data to shared storage that the organisation controls, with backup and version history, and restore a file once to prove it works. Compare row counts whenever data moves between formats or systems.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

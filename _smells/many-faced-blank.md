@@ -27,7 +27,9 @@ Every analyst guesses, and each guesses differently. Filling blanks with zero tu
 
 Make the distinction explicit. Keep the value empty and add a column that says why (`not applicable`, `not collected`, `refused`, `unknown`), or agree one code per reason in the data dictionary. State in the handover contract that zero is written as `0` and never as blank.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

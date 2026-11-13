@@ -29,7 +29,9 @@ No tool can read this without a person interpreting it first. A merged cell hold
 
 Separate the table from the report. Storage is one rectangle: one header row, one record per row, the category repeated on every row. The formatted view is rebuilt from that table as a pivot table or report page. Notes and titles move to a `Read me` tab.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

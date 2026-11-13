@@ -2,23 +2,23 @@
   letter: A
   title: Structure the data
   description: >-
-    What a dataset looks like. Get these wrong and every later step inherits
-    the problem.
+    The shape of your dataset. Get these wrong and every later step inherits
+    its problems.
 - id: move
   letter: B
   title: Move the data
   description: >-
-    The path from the moment a fact is recorded to the moment it appears in
+    The path your data follows. From the moment it is recorded to the moment it appears in
     a report.
 - id: trust
   letter: C
   title: Trust the data
   description: >-
-    The controls. They catch problems at the handover, before release and
+    The contracts and agreements. They catch problems at the handover, before release and
     after release.
 - id: care
   letter: D
   title: Look after the data
   description: >-
-    Stewardship. Who knows, who owns, what survives and what should not be
-    kept at all.
+    Data responsibility. Who knows, who owns, what stays and what should not be
+    stored at all.

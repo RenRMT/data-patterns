@@ -27,7 +27,9 @@ The test: could a colleague reproduce last month's report from the received file
 
 Two kinds of manual step need different treatment. If the step is a rule ("region codes are upper case"), write the rule into the process. If it is a judgement ("this partner's 'North' means district 4"), record the judgement as a row in a mapping table, so it is reusable and reviewable.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

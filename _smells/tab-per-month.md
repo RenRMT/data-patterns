@@ -27,7 +27,9 @@ The pieces must be stitched together by hand for every question that spans them,
 
 One table, with a column for the thing the tabs were split by (`period`, `department`). If the split already exists, or people need it for entry, combine the pieces automatically and treat the tab or file name as data.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -27,7 +27,9 @@ Each person spells the answer their own way, and the cleaning happens downstream
 
 Offer a list of managed values, fed from the master list. Add an input hint and a clear error message. Keep the list on its own maintained tab or table, so it can change without rebuilding the form.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

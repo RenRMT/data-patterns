@@ -23,7 +23,9 @@ Each fact has one home where it is entered and corrected, as close as possible t
 
 Each manual copy is a fresh chance for error and a second version of the truth. If five teams each fill in their part of a circulating workbook, the home is unclear by design: give them one form or one shared table instead.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

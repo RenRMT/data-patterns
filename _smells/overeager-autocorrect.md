@@ -27,7 +27,9 @@ The change is silent and often cannot be undone. Excel keeps 15 significant digi
 
 A code is not a number, because you do not calculate with it. Import files with every column's type stated, codes as text. Never edit the received file. Ask senders for CSV with ISO dates, so the conversion is yours to control.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

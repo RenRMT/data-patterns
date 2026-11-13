@@ -28,7 +28,9 @@ Every copy is a place the data can leak from, and every extra field makes a leak
 
 Collect only what will be used. Split identifiers from analysis data and link them with a meaningless ID. Give access per person and per need. Set a deletion date when the data is collected, and delete on it. Suppress or merge small groups before publishing.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

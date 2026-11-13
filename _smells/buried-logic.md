@@ -28,7 +28,9 @@ A rule that cannot be seen cannot be reviewed or updated. When the VAT rate chan
 
 Bring the logic into the open. Constants go in one parameters table with a name, a unit and a date. Calculations sit apart from data. Nothing that matters is hidden. Ranges are tables, which grow by themselves.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

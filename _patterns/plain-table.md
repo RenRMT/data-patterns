@@ -36,7 +36,9 @@ Rules that prevent most of the trouble:
 - Units go in the column name or the data dictionary, never in the cell (`25 kg`).
 - Colour, bold and cell comments carry no meaning. If it matters, it gets a column.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

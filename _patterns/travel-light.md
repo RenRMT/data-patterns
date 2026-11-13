@@ -29,7 +29,9 @@ Data you do not hold cannot leak. In the aid sector, the harm from exposure fall
 
 This pattern overrides the stakes tiers: any file that identifies people needs it from the first day.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

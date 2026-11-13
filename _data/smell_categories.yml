@@ -2,14 +2,14 @@
   title: Shape Shifters
   plain: Problems with the layout of the table
   description: >-
-    The data is laid out for a human eye instead of for a tool. It looks tidy
-    on screen, and every analysis starts with an hour of reshaping.
+    The data is laid out for a human eye instead of for a tool. It looks pretty
+    on screen, but every analysis starts with an hour of wrangling data.
 - id: meaning
   title: Mixed Messages
   plain: Problems with what a value means
   description: >-
-    The values are there, but nobody can say for certain what they mean.
-    Sums and averages come out silently wrong.
+    The values are in there, but nobody can say what they mean.
+    Sums and averages come out wrong.
 - id: identity
   title: Identity Crises
   plain: Problems with telling records apart
@@ -20,7 +20,7 @@
   title: Broken Trails
   plain: Problems with how data is made, changed and kept
   description: >-
-    The data may be fine today, but nobody can retrace how it got here,
+    The data may be fine now, but nobody can retrace how it got here,
     repeat it next month, or get it back when it is gone.
 - id: intake
   title: Intake Traps

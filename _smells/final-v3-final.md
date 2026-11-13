@@ -27,7 +27,9 @@ There is no single source of truth, and the copies drifting apart is only a matt
 
 One authoritative file at one address, with version history provided by the storage, not by the name. Changes are made in a working copy and released on purpose. Anyone who needs "a copy" gets a link or a view. Where several people contribute, they write into one shared table or form.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

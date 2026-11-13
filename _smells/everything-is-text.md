@@ -28,7 +28,9 @@ Sorting and arithmetic give wrong answers without an error. Dates such as `03/04
 
 Give every column a type when the data is read, with the source's locale stated, and let the load fail loudly when a value does not fit. Agree ISO dates (`YYYY-MM-DD`) in the handover contract. Codes that you do not calculate with (postcodes, IDs) are text on purpose.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

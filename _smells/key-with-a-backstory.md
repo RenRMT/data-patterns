@@ -27,7 +27,9 @@ An ID must never change, and the facts packed into it do. At the first reorganis
 
 Use a meaningless ID, and keep the components as ordinary columns (`country`, `department`, `year`) in the master list. An existing smart key can stay as a label that people recognise; stop deriving anything from it.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

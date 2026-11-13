@@ -25,7 +25,9 @@ Everything downstream then becomes disposable: any mistake can be fixed by rerun
 
 Received data is allowed to be messy. The cleaning belongs in the next layer, not here.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

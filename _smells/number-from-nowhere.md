@@ -28,7 +28,9 @@ A figure that cannot be traced cannot be checked, defended or corrected. When it
 
 Every table carries its origin: the source and the time of loading, on every row. Every step reads from a named input. A data map shows the route from source to report. For figures quoted in text, note the source and its date beside them.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 

@@ -27,7 +27,9 @@ Formatting does not survive an export, a copy-paste, or a colleague who does not
 
 Promote the meaning to a real column: `status`, `is_total`, `parent_id`, `comment`. If the colour helps readers, derive it from that column with conditional formatting. The colour becomes a consequence instead of the source.
 
-## In each stack
+## Code Examples
+
+{% include stack-switch.html %}
 
 <div class="stack" data-stack="excel" markdown="1">
 
