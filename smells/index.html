@@ -7,22 +7,21 @@ title: Data smells
   <h1 style="margin-top:8px">Data smells</h1>
   <p class="lead">
     A data smell is the counterpart of a code smell: a surface-level sign that something
-    may be wrong with your data. They do not immediately break a database, pipeline or spreadsheet,
-    but they indicate an increased risk of tech debt or silent failures in the future.
+    may be wrong with your data. 
   </p>
 </header>
 
 <div class="prose" style="margin-top:18px">
   <p>
-    Fixing an issue at data entry is less costly than fixing it in storage, which is less costly than
-    fixing in in a report. The later you fix it, the higher the cost and the number of people who need 
-    to know about the fix.
+    Data smells do not immediately break a database, pipeline or spreadsheet, but they indicate an increased 
+    risk of tech debt or silent failures in the future. Fixing an issue at data entry is usually less costly than fixing it 
+    in storage, which is less costly than fixing in in a report. The later you fix it, the higher the cost and the number 
+    of people who need to know about the fix.
   </p>
   <p>
-    While a code smell points at a design problem, a data smell usually
-    points at an organisational one. If department names are entered as free text it means that
-    nobody is responsible for the department list. In those cases the right approach is to start a
-    conversation about data ownership, not writing a script.
+    While a code smell points at a design problem, a data smell often points at an organisational one. 
+    If department names are entered as free text it means that nobody is responsible for the department list. 
+    In those cases the right approach is to start a conversation about data ownership, not writing a script.
   </p>
 </div>
 
